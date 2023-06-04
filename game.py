@@ -25,7 +25,7 @@ snake_speed = 24
  
 clock = pygame.time.Clock()
 
-font_style = pygame.font.SysFont(None, 50)
+font_style = pygame.font.SysFont(None, 24)
 
 def show_message(msg, color):
     mesg = font_style.render(msg, True, color)
@@ -98,7 +98,7 @@ def gameLoop():
         y1 += y1_change
 
         dis.fill(black)
-        pygame.draw.circle(dis, red, center=(foodx, foody), radius=snake_block) #FOOD
+        pygame.draw.rect(dis, red, (foodx, foody, snake_block, snake_block)) #FOOD
         snake_head = []
         snake_head.append(x1)
         snake_head.append(y1)
