@@ -33,7 +33,7 @@ def show_message(msg, color):
 
 def snake(snake_block, snake_list):
     for x in snake_list:
-        pygame.draw.circle(dis, white, radius=snake_block, center=(x[0], x[1])) #SNAKE BODY
+        pygame.draw.rect(dis, white, (x[0], x[1], 10, 10)) #SNAKE BODY
 
 
 def gameLoop():
