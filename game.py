@@ -20,7 +20,7 @@ blue = (0, 0, 255)
 #MAIN LOOP
 
 snake_block = 10
-snake_speed = 24
+snake_speed = 25
 
  
 clock = pygame.time.Clock()
@@ -98,7 +98,7 @@ def gameLoop():
         y1 += y1_change
 
         dis.fill(black)
-        pygame.draw.rect(dis, red, (foodx, foody, snake_block, snake_block)) #FOOD
+        pygame.draw.rect(dis, red, (foodx, foody, 15, 15)) #FOOD
         snake_head = []
         snake_head.append(x1)
         snake_head.append(y1)
